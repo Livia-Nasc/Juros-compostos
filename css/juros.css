@@ -1,0 +1,100 @@
+:root{
+    --linear_gradient: linear-gradient(90deg, #240046, #3C096C, #9D4EDD)
+}
+
+*{
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff; 
+    background-image: url("/img/vecteezy_abstract-background-smoke-purple-blur_8092315.jpg");
+    background-size: 100%;
+}
+
+#calcular{
+    background-color: rgba(0,0,0,0.8);
+    padding: 40px;
+    border-radius: 75px 10px 75px 10px;
+    box-shadow: 10px 10px 9px rgb(0, 0, 0,0.9);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    
+}
+
+#calcular h2{
+    font-size: 30px;
+    position: relative;
+}
+
+#calculazr h2::before{
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 175px;
+    background: var(--linear_gradient);
+    bottom: 5px;
+    margin: px;
+}
+#input-box{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+
+}
+
+.input-field{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-field label{
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.input-field input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #4c1d95;
+    font-size: 20px;
+    padding: 5px;
+    color: white;
+}
+
+.input-field input:focus {
+    outline: none;
+}
+
+#result {
+    text-align: center;
+}
+#resultado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column;
+    font-size: 30px;
+}
+
+#calculate {
+    background: var(--linear_gradient);
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
