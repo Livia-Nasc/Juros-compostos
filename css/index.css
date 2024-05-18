@@ -36,14 +36,13 @@
     position: relative;
 }
 
-#calculazr h2::before{
+#calcular h2::before{
     position: absolute;
     content: "";
     height: 3px;
     width: 175px;
     background: var(--linear_gradient);
     bottom: 5px;
-    margin: px;
 }
 #input-box{
     display: flex;
